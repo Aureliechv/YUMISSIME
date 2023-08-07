@@ -2,6 +2,8 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_user!
   include Pundit::Authorization
 
+  skip_before_action :authenticate_user!, only: :home
+
   # Pundit: allow-list approach
   after_action :verify_authorized, except: :index, unless: :skip_pundit?
   after_action :verify_policy_scoped, only: :index, unless: :skip_pundit?
