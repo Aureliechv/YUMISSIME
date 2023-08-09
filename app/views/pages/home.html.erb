@@ -1,8 +1,14 @@
 <div class="main-container">
-  <h1>Bienvenue sur</h1>
-  <h2>YUMISSIME</h2>
-  <%= image_tag("home-illustration.png", width: 200) %>
-  <a>S'INSCRIRE</a>
-  <a>SE CONNECTER</a>
-  <p>Le concept</p>
+  <div class="home-titles">
+    <h1 class="welcome">BIENVENUE SUR</h1>
+    <h1 class="brand">yumissime.</h2>
+  </div>
+  <div class="home-img-container">
+    <%= image_tag("home-illustration.png", width: 300) %>
+  </div>
+  <div class="home-btn-container">
+    <%= link_to "S'INSCRIRE", new_user_registration_path, class: "primary-btn"  %>
+    <%= link_to "SE CONNECTER", new_user_session_path, class: "secondary-btn"  %>
+    <p>Le concept</p>
+  </div>
 </div>
