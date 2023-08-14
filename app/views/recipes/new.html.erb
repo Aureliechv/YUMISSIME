@@ -1,0 +1,16 @@
+<h1 class="page-title">Nouvelle recette.</h1>
+<%= form_with model: @recipe do |f| %>
+  <%= f.label :nom_de_la_recette %>
+  <%= f.text_field :name %>
+  <%= f.label :temps_de_préparation_en_minute %>
+  <%= f.number_field :preparation_time %>
+  <%= f.label :temps_de_cuisson_en_minute %>
+  <%= f.number_field :cooking_time %>
+  <%= f.label :difficulté %>
+  <%= f.number_field :difficulty %>
+  <%= f.label :number_of_people %>
+  <%= f.number_field :number_of_people %>
+  <%= f.label :min_number_of_people %>
+  <%= f.number_field :min_number_of_people %>
+  <%= f.submit%>
+<% end %>

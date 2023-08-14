@@ -1,6 +1,15 @@
 body {
+  margin: 0px;
+}
+
+.page-container {
   margin:0px;
   height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: linear-gradient(to bottom, #f8cd8b, #f9d193, #f9d59c, #fad8a4, #fadcad, #fbdfb4, #fbe2ba, #fce5c1, #fce8c7, #fdeacd, #fdedd3, #fdefd9);
 }
 
